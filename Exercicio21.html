@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <script>
+        var nota1 = parseInt(prompt("Digite o valor da primeira nota:"), 10);
+        var nota2 = parseInt(prompt("Digite o valor da segunda nota:"), 10);
+        var optativa = parseInt(prompt("Digite o valor da optativa:"), 10);
+
+        if(optativa != 0) {
+            if(nota1 < optativa) {
+                nota1 = optativa;
+            } else if (nota2 < optativa){
+                nota2 = optativa;
+            }
+        }
+        var media = (nota1 + nota2)/2;
+
+        if(media >= 6.0){
+            alert("APROVADO !!!");
+            alert("Sua média final foi: " + media);
+        } else if (media >= 3.0 && media < 6.0){
+            alert("EXAME");
+            alert("Sua média final foi: " + media);
+        } else {
+            alert("REPROVADO");
+            alert("Sua média final foi: " + media);
+        }
+
+
+    </script>
+
+    <title>Exericicio 21</title>
+</head>
+<body>
+    
+</body>
+</html>

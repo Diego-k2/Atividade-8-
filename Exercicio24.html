@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+            var girafa = parseInt(prompt("Digite a idade da girafa:"));
+            var girafa2 = parseInt(prompt("Digite a idade da girafa:"));
+            var javali = parseInt(prompt("Digite a idade da javali:"));
+            var javali2 = parseInt(prompt("Digite a idade da javali:"));
+
+            var javaliVelho = 0;
+            var javaliNovo = 0;
+            var girafaVelha = 0;
+            var girafaNova = 0;
+
+
+            if(javali > javali2) {
+                javaliVelho = javali;
+                javaliNovo = javali2;
+            } else {
+                javaliVelho = javali2;
+                javaliNovo = javali1;
+            }
+
+            if(girafa > girafa2) {
+                girafaVelha = girafa;
+                girafaNova = girafa2;
+            } else {
+                girafaVelha = girafa2;
+                girafaNova = girafa;
+            }
+
+            var soma = javaliVelho + girafaNova;
+            var produto = javaliNovo * girafaVelha;
+            
+            alert("A soma entre a girafa mais nova e o javali mais velho é: " + soma);
+            alert("O produto entre a girafa mais velha e o javali mais novo é: " + produto);
+
+
+    </script>
+
+    <title>Exercicio 24</title>
+</head>
+<body>
+    
+</body>
+</html>

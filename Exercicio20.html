@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        var numeroLados = prompt("Digite o numero de lados:");
+        var medidaDoLado = prompt("Digite o valor do lado");
+
+        if(numeroLados == 3){
+            var calculo = medidaDoLado * 3;
+            alert("O poligono é um triangulo e seu perimetro é: " + calculo);
+        } else if(numeroLados == 4){
+            var calculo = medidaDoLado * medidaDoLado;
+            alert("O poligono é um quadrado e seu perimetro é: " + calculo);
+        } else if(numeroLados == 5) {
+            alert("O poligono é um pentagono")
+        } else if(numeroLados < 3) {
+            alert("NÃO É UM POLIGONO")
+        } else{
+            alert("POLIGONO NAO IDENTIFICADO")
+        }
+
+
+
+    </script>
+    
+    <title>Exercicio 20</title>
+</head>
+<body>
+    
+</body>
+</html>

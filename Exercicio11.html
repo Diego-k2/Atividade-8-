@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <script>
+        var inicial = parseInt(prompt("Digite o valor do inicio do odometro:"), 10);
+        var final = parseInt(prompt("Digite o valor final do odometro:"), 10);
+        var combustivel = parseInt(prompt("Digite quanto de combustivel foi gasto:"), 10);
+        var dinheiroGanho = parseInt(prompt("Digite quantos reais você ganhou:"), 10);
+
+        var consumoLitro = (final - inicial) / combustivel;
+        var lucro = dinheiroGanho - (combustivel * 2.90);
+
+        alert("O consumo médio: " + consumoLitro + "km/L");
+        alert("O seu lucro foi: R$" + lucro);
+       
+
+    </script>
+
+    <title>Exercicio 11</title>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <script>
+        var tamanhoPista = parseInt(prompt("Digite o tamanho da pista em metros:"));
+        var numeroVoltas = parseInt(prompt("Digite a quantidade de voltas:"));
+        var reabastecimento = parseInt(prompt("Digite o numero da paradas:"));
+        var consumoCarro = parseInt(prompt("Digite o consumo do carro:"));
+
+
+        var conversãoKm = (tamanhoPista * numeroVoltas) / 1000;
+        var minimoLitros = (conversãoKm / reabastecimento) / consumoCarro;
+        var totalLitros = conversãoKm / consumoCarro;
+
+
+        alert("O minimo de litros para a primeira parada é: " + minimoLitros);
+        alert("O tamanho da pista: " + conversãoKm + "Km");
+        alert("O total de litros é de: " + totalLitros);
+
+
+
+    </script>
+
+
+    <title>Exercicio 12</title>
+</head>
+<body>
+    
+</body>
+</html>

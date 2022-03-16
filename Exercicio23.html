@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <script>
+
+        var maior = 0;
+        var menor = 0;
+        var verifi_maior = 0;
+        var verifi_menor = 0;
+
+
+        for (let i = 0; i < 20; i++) {
+            var num = parseInt(prompt("Digite um numero:"));
+
+            //Verifica o maior
+            var contador_maior = num;
+
+            if (contador_maior > verifi_maior) {
+                verifi_maior = num;
+                maior = verifi_maior;
+            } else {
+                if (verifi_maior == 0) {
+                    verifi_maior = num;
+                }
+            }
+
+            //Verifica o menor
+            var contador_menor = num;
+
+            if (contador_menor < verifi_menor) {
+                verifi_menor = num;
+                menor = verifi_menor;
+            } else {
+                if (verifi_menor == 0) {
+                    verifi_menor = num;
+                    menor = verifi_menor;
+                }
+            }
+        }
+
+        alert("O maior foi: " + maior + " O menor foi: " + menor);
+
+
+    </script>
+
+    <title>Exercicio 23</title>
+
+</head>
+
+<body>
+</body>
+
+</html>
