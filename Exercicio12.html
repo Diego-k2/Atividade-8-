@@ -11,7 +11,7 @@
 
         var conversãoKm = (tamanhoPista * numeroVoltas) / 1000;
         var minimoLitros = (conversãoKm / reabastecimento) / consumoCarro;
-        var totalLitros = conversãoKm / consumoCarro;
+        var totalLitros = conversãoKm * consumoCarro;
 
 
         alert("O minimo de litros para a primeira parada é: " + minimoLitros);
